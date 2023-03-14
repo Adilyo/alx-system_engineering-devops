@@ -1,11 +1,4 @@
 #!/bin/bash
-
-# Get the values of the environment variables BREATH and LOVE
 BREATH=$BREATH
 LOVE=$LOVE
-
-# Calculate the result of BREATH to the power LOVE using the bc command
 RESULT=$(echo "scale=2; $BREATH^$LOVE" | bc)
-
-# Display the result, followed by a new line
-echo $RESULT
