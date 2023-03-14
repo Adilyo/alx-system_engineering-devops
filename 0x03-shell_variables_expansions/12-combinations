@@ -1,2 +1,3 @@
 #!/bin/bash
-echo "$i$j"
+if [ "$i$j" != "oo" ]; then
+      echo "$i$j"
