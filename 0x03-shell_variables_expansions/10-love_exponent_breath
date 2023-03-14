@@ -1,7 +1,2 @@
-#!/bin/sh
-
-BREATH=$1
-LOVE=$2
-
-RESULT=$(echo "$BREATH" | wc -c | tr -d ' ')
-RESULT=$(($RESULT ** $(echo "$LOVE" | wc -c | tr -d ' ')))
+#!/bin/bash
+echo $(($BREATH ** $LOVE))
