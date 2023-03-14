@@ -1,0 +1,4 @@
+#!/bin/bash
+BINARY=${BINARY:-0}  # Set default value to 0 if BINARY is not set
+
+DECIMAL=$((2#$BINARY))  # Convert BINARY to base 10

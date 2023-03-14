@@ -1,0 +1,5 @@
+#!/bin/bash
+BREATH=${BREATH:-0}  # Set default value to 0 if BREATH is not set
+LOVE=${LOVE:-0}      # Set default value to 0 if LOVE is not set
+
+RESULT=$((BREATH ** LOVE))  # Calculate BREATH to the power LOVE

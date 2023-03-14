@@ -1,0 +1,9 @@
+#!/bin/bash
+for (( i=0; i<26; i++ )); do
+    for (( j=0; j<26; j++ )); do
+        if [[ "$i" == 14 && "$j" == 14 ]]; then
+            continue  # Skip "oo"
+        fi
+        printf '%s%s\n' "$(printf '%c' $((i+97)))" "$(printf '%c' $((j+97)))"
+    done
+done
