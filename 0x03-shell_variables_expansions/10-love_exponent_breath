@@ -1,4 +1,7 @@
-#!/bin/bash
-BREATH=$BREATH
-LOVE=$LOVE
-RESULT=$(echo "scale=2; $BREATH^$LOVE" | bc)
+#!/bin/sh
+
+BREATH=$1
+LOVE=$2
+
+RESULT=$(echo "$BREATH" | wc -c | tr -d ' ')
+RESULT=$(($RESULT ** $(echo "$LOVE" | wc -c | tr -d ' ')))
