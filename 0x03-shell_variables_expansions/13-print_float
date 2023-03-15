@@ -1,4 +1,2 @@
-#!/bin/bash
-NUM=${NUM:-0}  # Set default value to 0 if NUM is not set
-
-printf "%.2f\n" $NUM  # Format NUM to two decimal places and output it
+#!/bin/sh
+printf "%.2f\n" "$NUM"
