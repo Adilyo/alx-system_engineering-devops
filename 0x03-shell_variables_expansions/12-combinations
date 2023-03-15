@@ -1,3 +1,2 @@
 #!/bin/bash
-if [ "$i$j" != "oo" ]; then
-      echo "$i$j"
+echo {a..z}{a..z} | tr " " "\n" | grep -v "oo"
